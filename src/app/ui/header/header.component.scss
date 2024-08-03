@@ -195,12 +195,25 @@
         .nav {
             flex-direction: column;
             width: 100%;
+
+            .dropdown {
+                &:hover .dropdown-menu {
+                    display: none; // Disable hover effect
+                }
+
+                &.active .dropdown-menu {
+                    display: flex; // Enable click effect
+                }
+
+                .dropdown-menu .column img {
+                    display: none;
+                }
+            }
         
             a {
                 padding: 10px 0;
                 width: 100%;
                 text-align: center;
-                border-bottom: 1px solid #303030;
             }
         }
     }

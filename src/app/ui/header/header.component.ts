@@ -16,4 +16,11 @@ export class HeaderComponent {
     this.isModalOpen = false;
   }
 
+  toggleDropdown(event: Event) {
+    event.preventDefault();
+    const target = event.currentTarget as HTMLElement;
+    target.classList.toggle('active');
+}
+
+
 }

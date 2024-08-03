@@ -3,7 +3,7 @@
       <img src="../../../assets/images/Group 1.svg" alt="Rock Lighting & Electric">
     </div>
     <nav class="nav">
-        <a href="#" class="dropdown">Indoor
+        <a href="#" class="dropdown" (click)="toggleDropdown($event)">Indoor
             <div class="dropdown-menu">
                 <div class="column">
                     <strong>CATEGORY</strong>
@@ -44,7 +44,7 @@
         <a href="#">Lighting Controls</a>
         <a href="#">Safety & Security</a>
         <a href="#">Electrical</a>
-        <a href="#">
+        <a href="#" class="dropdown" (click)="toggleDropdown($event)">
             Heating & Air
             <div class="dropdown-menu">
                 <div class="column">
