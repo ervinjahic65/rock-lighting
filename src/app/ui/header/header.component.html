@@ -55,7 +55,7 @@
         </a>
     </nav>
     <div class="icons">
-        <a href="#"><img src="../../../assets/images/Group 490.svg" alt="Search"></a>
+        <a href="#" (click)="openSearchModal()"><img src="../../../assets/images/Group 490.svg" alt="Search"></a>
         <a href="#"><img src="../../../assets/images/Group 489.svg" alt="User"></a>
         <a href="#">
             <img src="../../../assets/images/Icon feather-shopping-cart.svg" alt="Cart">
@@ -63,4 +63,15 @@
         </a>
     </div>
 </header>
+
+<!-- Modal -->
+<div class="modal" *ngIf="isModalOpen">
+    <div class="modal-content">
+        <span class="close" (click)="closeSearchModal()">&times;</span>
+        <form>
+            <img src="../../../assets/images/Group 481.svg" alt="Search">
+            <input type="text" placeholder="What are you looking for?">
+        </form>
+    </div>
+</div>
   

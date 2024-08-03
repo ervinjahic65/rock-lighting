@@ -47,7 +47,7 @@
         .dropdown-menu {
             display: none;
             position: absolute;
-            top: 100%;
+            top: calc(100% + 10px);
             left: 0;
             background-color: #fff;
             color: #303030;
@@ -114,6 +114,73 @@
         }
     }
 }
+
+// Modal
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+
+    .modal-content {
+        background-color: #fff;
+        padding: 134px 116px 0 111px;
+        width: 1440px;
+        height: 768px;
+        max-width: 100%;
+        position: relative;
+
+        form {
+            display: flex;
+            flex-direction: row;
+
+            input {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 10px;
+                border: none;
+                border-bottom: 1px solid #303030;
+                border-radius: 4px;
+                color: #303030;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 600;
+                font-size: 25px;
+            }
+
+            input:focus {
+                outline: none;
+            }
+
+            input::placeholder {
+                color: #303030;
+            }
+
+            img {
+                position: relative;
+                top: 16px;
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+            }
+        }
+
+        .close {
+            position: absolute;
+            top: 150px;
+            right: 95px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+    }
+}
+
   
 @media (max-width: 1170px) {
     .header {
