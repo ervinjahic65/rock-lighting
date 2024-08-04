@@ -88,9 +88,11 @@
     .icons {
         display: flex;
         gap: 15px;
+        margin-right: calc(3%);
       
         a {
             position: relative;
+            cursor: pointer;
 
             img {
                 height: 20px;
