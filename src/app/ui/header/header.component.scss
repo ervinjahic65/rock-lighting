@@ -203,6 +203,7 @@
 
                 &.active .dropdown-menu {
                     display: flex; // Enable click effect
+                    box-shadow: none !important;
                 }
 
                 .dropdown-menu .column img {
