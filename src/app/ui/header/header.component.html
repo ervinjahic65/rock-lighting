@@ -1,0 +1,77 @@
+<header class="header">
+    <div class="logo">
+      <img src="../../../assets/images/Group 1.svg" alt="Rock Lighting & Electric">
+    </div>
+    <nav class="nav">
+        <a href="#" class="dropdown" (click)="toggleDropdown($event)">Indoor
+            <div class="dropdown-menu">
+                <div class="column">
+                    <strong>CATEGORY</strong>
+                    <a href="#">High Bays</a>
+                    <a href="#">Cylinders</a>
+                    <a href="#">Panels</a>
+                    <a href="#">T-Bar</a>
+                    <a href="#">Troffers</a>
+                    <a href="#">Linerar Slot</a>
+                    <a href="#">Cove</a>
+                    <a href="#">Tape</a>
+                </div>
+                <div class="column">
+                    <strong>CATEGORY</strong>
+                    <a href="#">Round Arhitectural</a>
+                    <a href="#">Linear Arhitectural</a>
+                    <a href="#">Strips & Wraps</a>
+                    <a href="#">Surface Mount</a>
+                    <a href="#">Multiples</a>
+                    <a href="#">Track</a>
+                    <a href="#">Under Cabinet</a>
+                </div>
+                <div class="column">
+                    <strong>DOWNLIGHTS</strong>
+                    <a href="#">Trimless Downlights</a>
+                    <a href="#">Shallow Downlights</a>
+                    <a href="#">Canless Downlights</a>
+                    <a href="#">Fire Downlights</a>
+                    <a href="#">Residental Downlights</a>
+                    <a href="#">Commercial Downlights</a>
+                </div>
+                <div class="column">
+                    <img src="../../../assets/images/Rectangle170.png" alt="Screen shot">
+                </div>
+            </div>
+        </a>
+        <a href="#">Outdoor</a>
+        <a href="#">Lighting Controls</a>
+        <a href="#">Safety & Security</a>
+        <a href="#">Electrical</a>
+        <a href="#" class="dropdown" (click)="toggleDropdown($event)">
+            Heating & Air
+            <div class="dropdown-menu">
+                <div class="column">
+                    <a href="#">Patio Heaters</a>
+                    <a href="#">Exhaust Fans</a>
+                </div>
+            </div>
+        </a>
+    </nav>
+    <div class="icons">
+        <a (click)="openSearchModal()"><img src="../../../assets/images/Group 490.svg" alt="Search"></a>
+        <a href="#"><img src="../../../assets/images/Group 489.svg" alt="User"></a>
+        <a href="#">
+            <img src="../../../assets/images/Icon feather-shopping-cart.svg" alt="Cart">
+            <span class="cart-count">0</span>
+        </a>
+    </div>
+</header>
+
+<!-- Modal -->
+<div class="modal" *ngIf="isModalOpen">
+    <div class="modal-content">
+        <span class="close" (click)="closeSearchModal()">&times;</span>
+        <form>
+            <img src="../../../assets/images/Group 481.svg" alt="Search">
+            <input type="text" placeholder="What are you looking for?">
+        </form>
+    </div>
+</div>
+  

@@ -1,0 +1,99 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin: 25px;
+
+        .border-left {
+            border-left: 1px solid black;
+            padding: 10px;
+        }
+
+        h1 {
+            margin: 15px 0;
+        }
+
+        .hover-image {
+            img {
+                position: absolute;
+                top: 15%;
+                left: 35%;
+            }
+        }
+    }
+
+    .hero-image-section {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: auto;
+        margin-right: calc(5%);
+    }
+}
+
+.top-brands-bottom {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 20px 0;
+    align-items: center;
+
+    .top-brands-list {
+        img {
+            padding-left: 35px;
+            padding-right: 35px;
+            cursor: pointer;
+        }
+    }
+
+    .button {
+        width: 177px;
+        height: 43px;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 1170px) {
+    .container {
+        flex-direction: column;
+
+        .hero-text {
+            width: 100%;
+            align-items: center;
+
+            .border-left {
+                border-left: none !important;
+            }
+        }
+
+        .hero-image-section {
+            width: 100%;
+            margin-right: 0 !important;
+        }
+
+        .hover-image {
+            display: none;
+        }
+    }
+
+    .top-brands-bottom {
+        .top-brands-list {
+            display: flex;
+            flex-direction: column;
+
+            img {
+                margin: 10px 0;
+            }
+        }
+    }
+}
