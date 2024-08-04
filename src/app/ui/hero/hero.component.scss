@@ -24,7 +24,7 @@
             img {
                 position: absolute;
                 top: 15%;
-                left: 30%;
+                left: 35%;
             }
         }
     }
@@ -65,8 +65,35 @@
 
 @media (max-width: 1170px) {
     .container {
+        flex-direction: column;
+
+        .hero-text {
+            width: 100%;
+            align-items: center;
+
+            .border-left {
+                border-left: none !important;
+            }
+        }
+
+        .hero-image-section {
+            width: 100%;
+            margin-right: 0 !important;
+        }
+
         .hover-image {
             display: none;
+        }
+    }
+
+    .top-brands-bottom {
+        .top-brands-list {
+            display: flex;
+            flex-direction: column;
+
+            img {
+                margin: 10px 0;
+            }
         }
     }
 }
