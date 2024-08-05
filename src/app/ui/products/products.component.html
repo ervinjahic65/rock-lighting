@@ -30,8 +30,16 @@
                 </span>
             </div>           
         </div>
-        <div class="product-items">
+    </div>
+</div>
 
+<div class="product-items">
+    <div *ngFor="let products of popularProducts" class="popular-items-list">
+        <img [src]="products.image" alt="Popular products">
+        <div>
+            <small>{{ products.heading }}</small>
+            <h4>{{ products.subHeading }}</h4>
+            <p>{{ products.paragraph }}</p>
         </div>
     </div>
 </div>
