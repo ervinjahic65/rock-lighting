@@ -6,13 +6,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './ui/header/header.component';
 import { HeroComponent } from './ui/hero/hero.component';
 import { FooterComponent } from './ui/footer/footer.component';
+import { ProductsComponent } from './ui/products/products.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HeroComponent,
-    FooterComponent
+    FooterComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,

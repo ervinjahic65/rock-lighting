@@ -1,0 +1,32 @@
+<div class="products">
+    <div class="swiper-products">
+        <div *ngFor="let product of products" class="swiper-slide">
+          <img [src]="product.image" alt="Product Image">
+          <div>
+            <h3>{{ product.text }}</h3>
+            <button type="button">{{ product.buttonText }}</button>
+          </div>
+        </div>
+        <div class="swiper-button-prev">
+            <i class="fa-solid fa-chevron-left"></i>
+        </div>
+        <div class="swiper-button-next">
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+    </div>
+
+    <div class="popular-products">
+        <div>
+            <h1>Popular Products</h1>
+            <small>
+                Shop All
+            </small>
+            <span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </span>
+        </div>
+        <div class="product-items">
+
+        </div>
+    </div>
+</div>
