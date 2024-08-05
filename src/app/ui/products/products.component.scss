@@ -78,4 +78,42 @@
             right: 0;
         }
     }
+
+    .popular-products {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .popular-products-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+
+            .header-left {
+                display: flex;
+                align-items: center;
+                margin-left: calc(5%); 
+
+                h3 {
+                    padding-right: 15px;
+                }
+            }
+    
+            .header-right {
+                display: flex;
+                align-items: center;
+                margin-right: calc(5%);
+
+                small {
+                    padding-right: 15px;
+                }
+            }
+
+            .horizontal-line{
+                border: 1px solid #303030;
+                width: 76px;
+            }
+        }
+    }
 }
