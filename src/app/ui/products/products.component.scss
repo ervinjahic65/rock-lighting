@@ -158,3 +158,110 @@
         }
     }
 }
+
+@media (max-width: 1170px) {
+    .products {
+        margin-bottom: 70px;
+        .swiper-products {
+            flex-direction: column;
+            gap: 10px; // Adjust gap as needed
+
+            .swiper-slide {
+                width: 100%; // Make each slide take full width
+                .product-details {
+                    position: relative; // Adjust position for single column layout
+                    transform: none; // Reset transform
+                    top: auto;
+                    left: auto;
+                }
+
+                div {
+                    h3 {
+                        color: #303030;
+                    }
+                    button {
+                        border: 1px solid #303030;
+                    }
+                }
+            }
+
+            .swiper-button-prev,
+            .swiper-button-next {
+                display: none;
+            }
+        }
+
+        .product-items {
+            flex-direction: column;
+            margin-left: 0;
+            margin-right: 0;
+            gap: 20px; // Adjust gap as needed
+
+            .popular-items-list {
+                flex: 1 1 100%;
+            }
+        }
+
+        .popular-products {
+            .popular-products-header {
+                flex-direction: column;
+                align-items: center;
+                margin: 30px 0;
+
+                .header-left,
+                .header-right {
+                    margin-left: 0;
+                    margin-right: 0;
+                    margin-bottom: 10px; // Add margin between header sections
+                }
+
+                .horizontal-line {
+                    width: 100%; // Adjust line width if needed
+                }
+            }
+        }
+    }
+
+    .product-items {
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+        gap: 20px; // Adjust gap as needed
+    
+        .popular-items-list {
+            flex: 1 1 100%; // Make each item take full width
+            display: flex;
+            flex-direction: row; // Ensure image and text are in a row
+            align-items: center;
+            margin-bottom: 20%; // Add margin between items if needed
+            text-align: left; // Align text to the left
+    
+            img {
+                width: 30%; // Adjust width as needed
+                margin-right: 20px; // Space between image and text
+            }
+    
+            div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+    
+                small,
+                h4,
+                p {
+                    margin: 0;
+                    color: #6d6d6d;
+                }
+    
+                small {
+                    font-weight: bold;
+                }
+    
+                h4 {
+                    padding: 10px 0;
+                }
+            }
+        }
+    }    
+}
+
