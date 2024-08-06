@@ -155,6 +155,24 @@
             height: auto;
             display: block;
             cursor: pointer;
+
+            &:hover {
+                filter: blur(5px);
+            }
+        }
+
+        .hover-effect-ig {
+            display: none;
+            position: relative;
+            left: 50%;
+            bottom: 50%;
+            cursor: pointer;
+        }
+        
+        &:hover {
+            .hover-effect-ig {
+                display: block;
+            }
         }
     }
 }
