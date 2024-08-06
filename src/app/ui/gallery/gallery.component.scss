@@ -1,0 +1,186 @@
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the grid items */
+    margin-top: 50px;
+
+    .our-mission {
+        display: flex;
+
+        .gallery-hero-image {
+            width: 50%;
+            height: auto;
+            margin-left: 5%;
+        }
+
+        .our-mission-text {
+            width: 50%;
+            height: auto;
+            margin-left: 5%;
+            margin-right: 5%;
+            position: relative;
+            top: 40%;
+
+            div {
+                .horizontal-line-news {
+                    border: 1px solid #303030;
+                    width: 67%;
+                    position: relative;
+                    left: right;
+                    right: 35%;
+                }
+
+                h1 {
+                    padding-top: 30px;
+                }
+            }
+
+            div p {
+                padding: 20px 0;
+            }
+
+            div small {
+                padding-right: 15px;
+            }
+        }
+    }
+
+    .news {
+        .in-the-news {
+            margin: 50px calc(10%);
+            .news-text {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+
+                div {
+                    small {
+                        padding-right: 15px;
+                    }
+                }
+            }
+        }
+
+        .news-gallery-photos {
+            display: flex;
+            margin-left: calc(10%);
+            
+            img {
+                cursor: pointer;
+            }
+        }
+
+        .follow-lighting-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 50px 0;
+    
+            .vertical-line {
+                height: 89px;
+                border: 1px solid black;
+            }
+
+            p {
+                padding: 10px 0 20px 0;
+            }
+        }
+    }
+
+    .gallery-grid {
+        flex: 1 1 calc(25% - 10px);
+        max-width: calc(25% - 10px);
+        box-sizing: border-box;
+
+        .grid-images img {
+            width: 100%;
+            height: auto;
+            display: block;
+            cursor: pointer;
+        }
+    }
+}
+
+@media (max-width: 1170px) {
+    .gallery-container {
+        flex-direction: column;
+        align-items: center;
+        
+        .our-mission {
+            flex-direction: column;
+            align-items: center;
+
+            .gallery-hero-image, .our-mission-text {
+                width: 90%;
+                margin-left: 0;
+                margin-right: 0;
+                text-align: center;
+                top: 0;
+            }
+
+            .our-mission-text {
+                div {
+                    .horizontal-line-news {
+                        width: 90%;
+                        left: 0;
+                        right: 0;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+
+        .news {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .in-the-news {
+                width: 45%;
+                margin: 20px;
+                
+                .news-text {
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+
+                    div {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+
+            .news-gallery-photos {
+                width: 45%;
+                margin: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                img {
+                    margin-bottom: 20px;
+                }
+            }
+
+            .follow-lighting-section {
+                width: 100%;
+                .vertical-line {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        .gallery-grid {
+            width: 50%;
+            max-width: 50%;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+
+            .grid-images img {
+                width: 100%;
+            }
+        }
+    }
+}
