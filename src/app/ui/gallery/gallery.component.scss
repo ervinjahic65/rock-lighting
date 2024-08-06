@@ -101,3 +101,86 @@
         }
     }
 }
+
+@media (max-width: 1170px) {
+    .gallery-container {
+        flex-direction: column;
+        align-items: center;
+        
+        .our-mission {
+            flex-direction: column;
+            align-items: center;
+
+            .gallery-hero-image, .our-mission-text {
+                width: 90%;
+                margin-left: 0;
+                margin-right: 0;
+                text-align: center;
+                top: 0;
+            }
+
+            .our-mission-text {
+                div {
+                    .horizontal-line-news {
+                        width: 90%;
+                        left: 0;
+                        right: 0;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+
+        .news {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .in-the-news {
+                width: 45%;
+                margin: 20px;
+                
+                .news-text {
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+
+                    div {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+
+            .news-gallery-photos {
+                width: 45%;
+                margin: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                img {
+                    margin-bottom: 20px;
+                }
+            }
+
+            .follow-lighting-section {
+                width: 100%;
+                .vertical-line {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        .gallery-grid {
+            width: 50%;
+            max-width: 50%;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+
+            .grid-images img {
+                width: 100%;
+            }
+        }
+    }
+}
