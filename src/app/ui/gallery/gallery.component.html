@@ -5,44 +5,52 @@
         </div>
         <div class="our-mission-text">
             <div>
+                <div class="horizontal-line-news"></div>
                 <h1>OUR MISSION</h1>
                 <p>
                     Our mission here at Rock Lighting & Electric is to do things better. We are a forward-thinking supply house. We provide exceptional service in Lighting, Electrical, and Controls. We use the latest software and tech to provide today’s needs with tomorrow’s capabilities. Our job is simple, we specialize in providing our clients with any electrical and lighting material needs.
                 </p>
             </div>
             <div>
-                <button type="button">More About Us</button>
-                <i class="fa-solid fa-arrow-right"></i>
+                <small>More About Us</small>
+                <i class="fa-solid fa-arrow-right-long"></i>
             </div>
         </div>
     </div>
 
     <div class="news">
         <div class="in-the-news">
-            <div>
-                <h1>IN THE NEWS</h1>
-            </div>
-            <div>
-                <button>Our Blog</button>
-                <i class="fa-solid fa-arrow-right"></i>
+            <div class="news-text">
+                <div>
+                    <h1>In The News</h1>
+                </div>
+                <div>
+                    <small>Our Blog</small>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
             </div>
         </div>
-        <div class="news-gallery-photos" *ngFor="let images of newsImage">
-            <img [src]="images.image" alt="News Image">
-            <small>{{ images.category }}</small>
-            <h3>{{ images.heading }}</h3>
-            <p>{{ images.content }}</p>
+        <div class="news-gallery-photos">
+            <div class="news-image" *ngFor="let images of newsImage">
+                <div>
+                    <img [src]="images.image" alt="News Image">
+                </div>
+                <div class="news-text">
+                    <small>{{ images.category }}</small>
+                    <h3>{{ images.heading }}</h3>
+                    <p>{{ images.content }}</p>
+                </div>
+            </div>
         </div>
-    </div>
-
-    <div class="follow-lighting-section">
-        <h3>Follow us on Instagram</h3>
-        <p>@ROCK.LIGHTING</p>
-        <div class="vertical-line"></div>
+        <div class="follow-lighting-section">
+            <h3>Follow us on Instagram</h3>
+            <p>@ROCK.LIGHTING</p>
+            <div class="vertical-line"></div>
+        </div>
     </div>
 
     <div class="gallery-grid" *ngFor="let images of galleryImages">
-        <div>
+        <div class="grid-images">
             <img [src]="images.image" alt="Gallery Image">
         </div>
     </div>
