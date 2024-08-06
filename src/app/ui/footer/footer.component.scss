@@ -15,7 +15,7 @@
         justify-content: center;
 
         img {
-            width: 100px;
+            width: 81px;
         }
     }
 
@@ -28,9 +28,11 @@
         gap: 20px;
 
         small {
+            font-family: 'Barlow Condensed', sans-serif;
             font-size: 14px;
-            font-weight: bold;
+            font-weight: 600;
             color: #303030;
+            text-transform: uppercase;
         }
 
         ul {
@@ -41,8 +43,10 @@
                 padding: 10px 0;
                 a {
                     text-decoration: none;
-                    color: #333;
-                    font-size: 16px;
+                    color: #303030;
+                    font-family: 'Roboto Condensed', sans-serif;
+                    font-weight: normal;
+                    font-size: 15px;
                     transition: color 0.3s ease;
 
                     &:hover {
@@ -70,9 +74,11 @@
             gap: 20px;
 
             small {
+                font-family: 'Barlow Condensed', sans-serif;
                 font-size: 14px;
-                font-weight: bold;
+                font-weight: 600;
                 color: #303030;
+                text-transform: uppercase;
             }
 
             ul {
@@ -173,23 +179,23 @@ hr {
 @media (max-width: 1170px) {
     .footer-container {
         flex-direction: column;
-        justify-content: center; // Center the content
+        justify-content: center;
         align-items: center;
-        gap: 50px; // Add some spacing between the sections
+        gap: 50px;
 
         .footer-logo,
         .footer-shop,
         .footer-company,
         .footer-service,
         .footer-follow {
-            flex: none; // Remove flex-grow to avoid expanding
-            width: 200px; // Fixed width for consistency
-            text-align: center; // Center text within sections
+            flex: none;
+            width: 200px; 
+            text-align: center;
         }
 
         .footer-follow {  
                 display: flex;
-                justify-content: center; // Center social icons
+                justify-content: center;
                 gap: 20px;
 
             .newsletter-section {
@@ -202,14 +208,14 @@ hr {
 
     .copyright-section {
         flex-direction: row;
-        justify-content: center; // Center the copyright content
+        justify-content: center;
         align-items: center;
-        margin: 25px 0; // Adjust margin for better spacing
+        margin: 25px 0;
 
         div {
             display: flex;
             gap: 10px;
-            text-align: center; // Center text within sections
+            text-align: center;
         }
     }
 }

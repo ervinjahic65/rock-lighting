@@ -13,11 +13,35 @@
 
         .border-left {
             border-left: 1px solid black;
-            padding: 10px;
+            padding: 25px;
         }
 
         h1 {
-            margin: 15px 0;
+            color: #303030;
+            margin: 35px 0;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-weight: 600;
+            font-size: 65px;
+        }
+
+        p {
+            color: #303030;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            letter-spacing: 3.2px;
+            text-transform: uppercase;
+        }
+
+        small {
+            padding-right: 15px;
+            color: #303030;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        small:hover {
+            color: #3693E0;
         }
 
         .hover-image {
@@ -46,7 +70,7 @@
     margin: 20px 0;
     align-items: center;
 
-    .top-brands-list {
+    .top-brands-list, .top-brand-list-hover {
         img {
             padding-left: 35px;
             padding-right: 35px;
@@ -54,17 +78,32 @@
         }
     }
 
+    .top-brand-list-hover {
+        display: none;
+    }
+
     .button {
         width: 177px;
         height: 43px;
         padding: 10px;
         border-radius: 5px;
+        border: 1px solid #303030;
         cursor: pointer;
+        color: #303030;
+    }
+
+    .top-brands-header {
+        font-family: 'Robto Condensed', sans-serif;
+        font-weight: normal;
+        font-size: 16px;
+        color: #303030;
+        letter-spacing: 3.2px;
+        text-transform: uppercase;
     }
 }
 
 .home-section-layout {
-    margin: 50px 0;
+    margin: 100px 0;
 }
 
 @media (max-width: 1170px) {
