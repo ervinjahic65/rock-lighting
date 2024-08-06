@@ -1,5 +1,5 @@
 # Site hosted on this link:
- [https://rock-lighting.netlify.app/hero](https://rock-lighting.netlify.app/hero)
+ https://rock-lighting.netlify.app
 
 # RockLighting
 
